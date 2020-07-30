@@ -1,0 +1,12 @@
+{
+  "name": "app-beer-here",
+  "displayName": "app-beer-here",
+  "expo": {
+    "name": "app-beer-here",
+    "slug": "app-beer-here",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
