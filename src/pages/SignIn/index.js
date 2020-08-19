@@ -1,16 +1,37 @@
 import React from 'react';
-import { View, Text } from 'react-native';
 import Background from '../../components/Background'
-import Input from '../../components/Input'
-// import { Container } from './styles';
+import { 
+  Container, 
+  Form, 
+  FormInput, 
+  SubmitButton, 
+  SignLink, 
+  SignLinkText 
+} from './styles';
 
 const SignIn = props => {
   return (
     <Background>
-      <Text>SignIn</Text>
-      <Input 
-        placeholder="Digite seu e-mail"
-      />
+      <Container>
+        <Form>
+          <FormInput
+            icon="mail-outline"
+            keyboardType="email-address"
+            autoCorrect={false}
+            autoCapitalize="none"
+            placeholder="Digite seu e-mail"
+          />
+          <FormInput
+            icon="lock-outline"
+            secureTextEntry
+            placeholder="Digite sua senha"
+          />
+        </Form>
+        <SubmitButton onpress={() => {}}>Acessar</SubmitButton>
+        <SignLink onpress={() => {}}>
+          <SignLinkText>Criar conta gratuita</SignLinkText>
+        </SignLink>
+      </Container>
     </Background>
   )
 }
