@@ -88,6 +88,8 @@ target 'appbeerhere' do
   add_flipper_pods!
   pod 'BVLinearGradient', :path => '../node_modules/react-native-linear-gradient'
 
+  pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
+
   post_install do |installer|
     flipper_post_install(installer)
   end
